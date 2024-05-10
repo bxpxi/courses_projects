@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill in this survey form about colours</p>
+  <form id="survey-form">
+    <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter Your Name"></label>
+    <label id="email-label">Email: <input id="email" type="email" required placeholder="Enter Your Email"></label>
+    <label id="number-label">Age: <input id="number" type="number" min=10 max=100 placeholder="Age"></label>
+    <label id="education">Highest level of education
+      <select id="dropdown">
+        <option>Highschool</option>
+        <option>BA</option>
+        <option>MA</option>
+        <option>Phd</option>
+      </select>
+    </label id="gender">Gender
+    <div class="radio-btn">
+      <div class="btn1">
+        <input name="radio-buttons" type="radio"  value="male">
+        <label>Male</label>
+      </div>
+      <div class="btn2">
+        <input name="radio-buttons" type="radio" value="female">
+        <label>Female</label>
+      </div>
+    </div>
+    <div id="colour">
+      <label>What's your favourite colour?</label>
+        <div class="group1">
+          <div class="check 1">
+            <input value="red" type="checkbox">
+            <label>Red</label>
+          </div>
+          <div class="check 2">
+            <input value="orange" type="checkbox">
+            <label>Orange</label>
+          </div>
+          <div class="check 3">
+            <input value="yellow" type="checkbox">
+            <label>Yellow</label>
+          </div>
+          <div class="check 4">
+            <input value="green" type="checkbox">
+            <label>Green</label>
+          </div>
+        </div>
+        <div class="group2">
+          <div class="check 5">
+            <input value="blue" type="checkbox">
+            <label>Blue</label>
+          </div>
+          <div class="check 6">
+            <input value="purple" type="checkbox">
+            <label>Purple</label>
+          </div>
+          <div class="check 7">
+            <input value="violet" type="checkbox">
+            <label>Violet</label>
+          </div>
+          <div class="check 8">
+            <input value="pink" type="checkbox">
+            <label>Pink</label>
+          </div>
+        </div>
+        <div class="group3">
+          <div class="check 9">
+            <input value="magenta" type="checkbox">
+            <label>Magenta</label>
+          </div>
+          <div class="check 10">
+            <input value="aqua" type="checkbox">
+            <label>Aqua</label>
+          </div>
+          <div class="check 11">
+            <input value="Beige" type="checkbox">
+            <label>Violet</label>
+          </div>
+          <div class="check 12">
+            <input value="brown" type="checkbox">
+            <label>Brown</label>
+          </div>
+        </div>
+      </div>
+    <textarea>I like this colour because ...</textarea>
+    <input id="submit" type="submit">
+  </form>
+</body>
+</html>

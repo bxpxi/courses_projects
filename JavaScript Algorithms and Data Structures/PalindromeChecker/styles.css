@@ -1,0 +1,128 @@
+*{
+  font-size:1.2rem;
+  background-color:#021B12;
+  color:#F2F7F5;
+  font-family:sans-serif;
+}
+
+#info{
+  width:40%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:2rem;
+  margin-bottom:2rem;
+}
+
+#heading{
+  font-size:2.3rem;
+  font-weight:800;
+  margin-bottom:0;
+}
+
+#palindrome-checker{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:0.1rem;
+  margin-top:0;
+}
+
+#entry-data{
+  background-color:#F2F7F5;
+  color:#021B12;
+  height:10rem;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  gap:0.4rem;
+  padding-top:0.3rem;
+  padding-bottom:0.3rem;
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+  width:80%;
+  border-radius:12%;
+  border:3px solid rgba(83, 137, 119,0.6);
+  box-shadow:#8BB5A7 1px 4px 2px;
+}
+
+#palindrome-checker h2{
+  font-size:1rem;
+  color:#021B12;
+  position:relative;
+  top:4rem;
+  background-color:#F2F7F5;
+  font-weight:normal;
+}
+
+#text-input{
+  background-color:#F2F7F5;
+  border:none;
+  border-bottom:3px solid #165E45;
+  color:#021B12;
+}
+
+#check-btn{
+  border-radius:40%;
+  background-color:#165E45;
+  border:none;
+  padding:0.4rem;
+}
+
+#check-btn:hover{
+  background-color:#5B9782;
+  color:#021B12;
+}
+
+img{
+  height:2.5rem;
+  background-color:#A5E3CE;
+  position:relative;
+  top:-1.3rem;
+  right:-0.2rem;
+}
+
+#explanation{
+  background-color:#A5E3CE;
+  height:8rem;
+  margin-top:2rem;
+  border-radius:12%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:no-wrap;
+  align-items:center;
+  gap:0;
+  justify-content:space-around;
+  width:70%;
+  text-align:center;
+  position:relative;
+  right:-4rem;
+  padding:0.2rem;
+  padding-right:0.3rem;
+}
+
+#explanation p{
+  background-color:#A5E3CE;
+  color:#021B12;
+  font-size:0.8rem;
+  font-weight:bold;
+  position:relative;
+  top:0rem;
+  width:100%;
+}
+
+i{
+  background-color:#A5E3CE;
+  color:#021B12;
+  font-size:0.8rem;
+  text-shadow:#6AAF98 3px 2px;
+}
+
+#result{
+  position:relative;
+  top:-4rem;
+  height:0rem;
+}
+

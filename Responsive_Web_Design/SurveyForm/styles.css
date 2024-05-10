@@ -1,0 +1,184 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background:url('https://wallpaperbat.com/img/857621-best-fluid-art-picture-hd.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+background-position: center;
+  color: #F5E0E0;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+h1{
+  text-shadow:rgba(216, 177, 177,0.4) 3px 1px;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  border:5px groove #F5E0E0;
+  background-color:rgba(51, 14, 14,0.5);
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight:400;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: rgba(6, 19, 41,0.65);
+  border: 1px solid rgba(6, 19, 41);
+  color: #F5E0E0;
+}
+
+input[type='radio']:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: 3px;
+  left: -1px;
+  position: relative;
+  background-color: rgba(6, 19, 41);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #F5E0E0;
+}
+
+input[type='radio']:checked:after {
+  width: 13px;
+  height: 13px;
+  border-radius: 15px;
+  top: 3px;
+  left: -1px;
+  position: relative;
+  background-color: #F5E0E0;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgba(6, 19, 41);
+}
+
+.radio-btn{
+  display:flex;
+  flex-direction:row;
+  justify-content:begin;
+  align-items:center;
+  gap:1.5rem;
+}
+
+.btn1{
+  display:flex;
+  flex-direction:row;
+  justify-content:begin;
+  align-items:center;
+  gap:0.5rem;
+}
+
+.btn2{
+  display:flex;
+  flex-direction:row;
+  justify-content:end;
+  align-items:center;
+  gap:0.5rem;
+}
+
+input[type="radio"]{
+  transform:translateY(-0.3rem);
+}
+
+#dropdown{
+  background-color: rgba(6, 19, 41,0.65);
+  border: 1px solid rgba(6, 19, 41);
+  color: #F5E0E0;
+}
+
+#colour{
+  display:flex;
+  flex-direction:row;
+  justify-content:begin;
+  align-items:center;
+  gap:2rem;
+  flex-wrap:no-wrap;
+}
+
+input[type="checkbox"]{
+  width:15px;
+  height:15px;
+  margin-top:0;
+}
+
+input[type='checkbox']:after {
+  width: 13px;
+  height: 13px;
+  top: 3px;
+  left: -1px;
+  position: relative;
+  background-color: rgba(6, 19, 41);
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid #F5E0E0;
+}
+
+
+input[type='checkbox']:checked:after {
+  width: 13px;
+  height: 13px;
+  top: 3px;
+  left: -1px;
+  position: relative;
+  background-color: #F5E0E0;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid rgba(6, 19, 41);
+}
+
+textarea{
+  resize:none;
+  height:3rem;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgba(6, 19, 41,0.8);
+  border:2px groove #F5E0E0;
+  min-width: 300px;
+}
+
+input[type="submit"]:hover{
+  background-color: #F5E0E0;
+  border: 2px groove rgba(6, 19, 41);
+  color:rgba(6, 19, 41);
+}
+
+
+
+

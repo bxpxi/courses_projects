@@ -1,0 +1,91 @@
+*{
+  color:#2F2431;
+  font-family:Tahoma;
+  background-color:#EEE4F0;
+  font-size:1rem;
+}
+
+#main{
+  margin: 1rem auto;
+  width:100%;
+  text-align:center;
+  padding:1rem;
+  height:80vh;
+}
+
+#title{
+  padding:3rem;
+  background-color:#D1BAD4;
+  font-size:2.5rem;
+}
+
+#subtitle{
+  position:relative;
+  top:-4.1rem;
+  background-color:#D1BAD4;
+  font-weight:normal;
+}
+
+#image{
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 3vw auto 0 auto; 
+  border:none;
+}
+
+figcaption{
+  margin-top:1rem;
+}
+
+figure{
+  border:2rem solid white;
+  padding:1.8rem;
+}
+
+#tribute-info{
+  width:50%;
+  display:center;
+  margin:2rem auto;
+  padding:1rem;
+}
+
+#tribute-info h2{
+  font-size:1.3rem;
+  padding-bottom:1rem;
+}
+
+#tribute-info li{
+  padding-top:1.2rem;
+  text-align:left;
+}
+
+.year{
+  font-weight:bold;
+}
+
+#quote{
+  margin-top:3.5rem;
+  font-weight:600;
+}
+
+#more-info{
+  margin-top:3.5rem;
+  font-size:1.2rem;
+  font-weight:bold;
+}
+
+#tribute-link{
+  color:#987F9C;
+  font-size:1.2rem;
+}
+
+@media (max-width:600px){
+  #tribute-info{
+    width:80%;
+  }
+  #title{
+    font-size:2rem;
+  }
+}

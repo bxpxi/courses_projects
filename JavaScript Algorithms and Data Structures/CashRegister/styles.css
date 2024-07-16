@@ -1,0 +1,43 @@
+*{
+  color:navy;
+  font-family:Sans-serif;
+  font-size:1.1rem;
+  text-align:center;
+  margin-top:1rem;
+}
+
+img{
+  height:16rem;
+  width:16rem;
+  position:relative;
+  top:-3rem;
+  z-index:1;
+}
+
+#title{
+  font-size:1.5rem;
+}
+
+#total{
+  position:relative;
+  top:1.5rem;
+  z-index:3;
+}
+
+#cid1{
+  position:relative;
+  top:-3rem;
+  left:-3.8rem;
+}
+
+#cid2{
+  position:relative;
+  top:-10.2rem;
+  left:5.3rem;
+}
+
+#change-due{
+  color:orangered;
+  position:relative;
+  top:-35rem;
+}

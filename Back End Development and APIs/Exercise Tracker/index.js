@@ -7,39 +7,37 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-// In-memory storage
+// storage
 let users = [];
 let exercises = [];
 
-// Serve the frontend
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/index.html');
 });
 
-// Function to generate a unique string-based ID (e.g., timestamp-based)
+// generate a unique id for each user
 const generateId = () => new Date().getTime().toString() + Math.random().toString(36).substring(7);
 
-// Create a new user (POST /api/users)
+// create a new user
 app.post('/api/users', (req, res) => {
   const newUser = {
-    _id: generateId(), // Generate a unique string-based _id
+    _id: generateId(),
     username: req.body.username,
   };
   users.push(newUser);
   res.json(newUser);
 });
 
-// Get all users (GET /api/users)
+// get all users 
 app.get('/api/users', (req, res) => {
-  // Return only the username and _id for each user as string
   const usersList = users.map(user => ({
     username: user.username,
-    _id: user._id,  // Ensure _id is a string
+    _id: user._id
   }));
   res.json(usersList);
 });
 
-// Add exercise for a user (POST /api/users/:_id/exercises)
+// add exercise for a user
 app.post('/api/users/:_id/exercises', (req, res) => {
   const userId = req.params._id;
   const user = users.find(u => u._id === userId);
@@ -49,11 +47,11 @@ app.post('/api/users/:_id/exercises', (req, res) => {
   }
 
   const exercise = {
-    _id: generateId(), // Generate unique id for each exercise
+    _id: generateId(),
     userId: userId,
     description: req.body.description,
     duration: parseInt(req.body.duration),
-    date: req.body.date ? new Date(req.body.date).toDateString() : new Date().toDateString(),
+    date: req.body.date ? new Date(req.body.date).toDateString() : new Date().toDateString()
   };
 
   exercises.push(exercise);
@@ -63,11 +61,11 @@ app.post('/api/users/:_id/exercises', (req, res) => {
     description: exercise.description,
     duration: exercise.duration,
     date: exercise.date,
-    _id: user._id,  // Return the string-based user _id
+    _id: user._id
   });
 });
 
-// Get exercise log for a user (GET /api/users/:_id/logs)
+// get exercise log for a user
 app.get('/api/users/:_id/logs', (req, res) => {
   const userId = req.params._id;
   const user = users.find(u => u._id === userId);
@@ -78,7 +76,6 @@ app.get('/api/users/:_id/logs', (req, res) => {
 
   let userExercises = exercises.filter(e => e.userId === userId);
 
-  // Apply filters: 'from', 'to', 'limit'
   const { from, to, limit } = req.query;
   if (from) {
     const fromDate = new Date(from);
@@ -95,7 +92,7 @@ app.get('/api/users/:_id/logs', (req, res) => {
   res.json({
     username: user.username,
     count: userExercises.length,
-    _id: user._id,  // Ensure _id is returned as a string
+    _id: user._id,
     log: userExercises.map(e => ({
       description: e.description,
       duration: e.duration,

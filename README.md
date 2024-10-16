@@ -1,2 +1,2 @@
 # portofolio_projects
-Projects from the freeCodeCamp courses
+Projects from extracurricular courses
